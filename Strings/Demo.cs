@@ -10,17 +10,28 @@ namespace Strings
     {
         static void Main(string[] args)
         {
-            string n = "this is string count program";
-            int count = 0;
-            for (int i = 0; i < n.Length; i++) {
+            string nt = "nikhil";
+            int vcount = 0;
+            int ccount = 0;
 
-                if (n[i]!=' ')
+            for (int i = 0; i < nt.Length; i++) {
+
+                if (nt[i] == 'e' || nt[i] == 'i')
                 {
-                    count++;
+                    vcount++;   
                 }
-               
+                else if (nt[i]>'a' && nt[i] < 'z')
+                {
+
+                    ccount++;  
+                }
+
             }
-            Console.WriteLine(count);
-        }
+
+            Console.WriteLine(ccount);  
+            Console.WriteLine(vcount);
+           
+
+        } 
     }
 }
