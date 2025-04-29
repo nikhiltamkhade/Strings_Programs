@@ -8,16 +8,23 @@ namespace Strings
 {
     internal class Revese_word
     {
+        // imp asked in interview 
         static void Main(string[] args)
         {
-            Console.WriteLine("enter the string");
-            string input=Console.ReadLine();    
+            string input = " today is my day";
 
-            char[] chararray=input.ToCharArray();
-            Array.Reverse(chararray);
-            string rev=new string(chararray);  // this is optional
+            string[] words = input.Split(' ');  // split into world
 
-            Console.WriteLine(rev);
+            string result = "";
+
+            for (int i = words.Length - 1; i >= 0; i--) {
+            
+                
+                result += words[i]+" ";
+
+            }           
+            
+            Console.WriteLine(result);
 
         }
     }

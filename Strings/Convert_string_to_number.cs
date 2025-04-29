@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Strings
 {
-    internal class Convert_string_into_number
+    internal class Convert_string_to_number
     {
 
 

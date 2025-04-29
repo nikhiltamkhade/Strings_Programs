@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,28 +11,32 @@ namespace Strings
     {
         static void Main(string[] args)
         {
-            string nt = "nikhil";
-            int vcount = 0;
-            int ccount = 0;
+            string st = "nin";
 
-            for (int i = 0; i < nt.Length; i++) {
+            char[] ch = st.ToCharArray();
 
-                if (nt[i] == 'e' || nt[i] == 'i')
-                {
-                    vcount++;   
-                }
-                else if (nt[i]>'a' && nt[i] < 'z')
-                {
+            Array.Reverse(ch);
 
-                    ccount++;  
-                }
+            string s=new string(ch);
 
+            if (st == s)
+            {
+                Console.WriteLine("string is palindrom");
+            }
+            else
+            {
+                Console.WriteLine("string is not palindrom");
             }
 
-            Console.WriteLine(ccount);  
-            Console.WriteLine(vcount);
-           
 
-        } 
+
+
+
+
+
+
+            
+
+        }
     }
 }
