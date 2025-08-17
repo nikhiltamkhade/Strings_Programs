@@ -13,7 +13,7 @@ namespace Strings
 
             string n = "nikhil tamkhade";
             string t = "patil";
-            bool nt = string.IsNullOrEmpty(n);
+            bool nt = string.IsNullOrEmpty(n);  // here check string null or empty
 
             Console.WriteLine(nt);
 

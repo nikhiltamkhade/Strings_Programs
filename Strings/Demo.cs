@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -9,34 +10,36 @@ namespace Strings
 {
     internal class Demo
     {
-        static void Main(string[] args)
+
+
+        public static void Main(string[] args)
         {
-            string st = "nin";
+            string st = "nikhil shahaji tamkhade";
 
-            char[] ch = st.ToCharArray();
 
-            Array.Reverse(ch);
+            Dictionary<char, int> dic = new Dictionary<char, int>();
 
-            string s=new string(ch);
-
-            if (st == s)
+            foreach(char c in st)
             {
-                Console.WriteLine("string is palindrom");
+                if (dic.ContainsKey(c))
+                {
+                    dic[c]++;
+                }
+                else { 
+                dic[c] = 1;
+
+                }
             }
-            else
-            {
-                Console.WriteLine("string is not palindrom");
-            }
 
+            foreach (var c in dic) { 
 
-
-
-
-
-
-
+                Console.WriteLine(c.Value+""+c.Key);
             
 
+            
+            }
+
         }
+
     }
 }

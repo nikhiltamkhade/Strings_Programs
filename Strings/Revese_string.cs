@@ -15,8 +15,8 @@ namespace Strings
 
                 for (int i = s.Length - 1; i >= 0; i--)
                 {
-                    ss = ss + s[i];
-                }
+                    ss = ss + s[i];  //ss += s[i];
+            }
 
                 Console.WriteLine(ss);  
                 Console.ReadLine();

@@ -36,19 +36,6 @@ namespace Strings
 
             Console.ReadLine();
         }
-        //---------------- this is another way------------------------
-
-    //    string N = "nikhil";
-    //    string result = " ";
-
-    //        for (int i = 0; i<N.Length; i++) {
-
-    //            if (!result.Contains(N[i])){
-    //                result = result+ N[i];
-
-    //            }
-    //}
-    //        Console.WriteLine(result);
-    //        Console.ReadLine();
+       
     }
 }

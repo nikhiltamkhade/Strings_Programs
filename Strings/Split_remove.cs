@@ -10,13 +10,13 @@ namespace Strings
     {
         static void Main(string[] args)
         {
-            string nt = "apple,,,,,,,,,. is,fruits";
+            string nt = "apple,is,fruits";
 
-           // string ta = nt.Split(','); // this is not allowed because split method string[] array
+           // string ta = nt.Split(','); // this is not allowed because split is method  of array string[] array
 
             string[] ta=nt.Split(',');
 
-            foreach (string t in ta)
+            foreach (var t in ta)
             {
                 Console.WriteLine(t);
             }

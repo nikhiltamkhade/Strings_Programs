@@ -18,6 +18,7 @@ namespace Strings
 
             foreach (char c in input)
             {
+
                 if (charCount.ContainsKey(c))
                     charCount[c]++;
                 else

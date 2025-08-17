@@ -10,22 +10,16 @@ namespace Strings
     {
         static void Main(string[] args)
         {
+            string str = "586";
 
-                string str = "586";
-
-                Console.WriteLine(Reverse(str));
+            Console.WriteLine(Reverse(str));
             Console.ReadLine();
-
         }
-
         public static string Reverse(string nikhil)
         {
-
-
             if (nikhil == null)
 
                 throw new ArgumentNullException(" null is not valid input");
-
 
             StringBuilder sb = new StringBuilder();
             char[] chars = nikhil.ToCharArray();
@@ -33,7 +27,7 @@ namespace Strings
             for (int i = chars.Length - 1; i >= 0; i--)
             {
 
-              //  sb.Append(chars[i]);
+               sb.Append(chars[i]);
             }
 
             return sb.ToString();

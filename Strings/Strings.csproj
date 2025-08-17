@@ -53,7 +53,9 @@
     <Compile Include="Dublicate_character.cs" />
     <Compile Include="For_Loop_string.cs" />
     <Compile Include="Inter.cs" />
+    <Compile Include="Inter2.cs" />
     <Compile Include="Interview_count_string.cs" />
+    <Compile Include="Interview_find_dublicate_count.cs" />
     <Compile Include="Interview_program.cs" />
     <Compile Include="Methods_string.cs" />
     <Compile Include="Multithreding.cs" />
@@ -64,7 +66,6 @@
     <Compile Include="Remove_spcae_string.cs" />
     <Compile Include="Remove_special_character.cs" />
     <Compile Include="Reversestring_withoutusing_buildinfunction.cs" />
-    <Compile Include="Reverse_word_2.cs" />
     <Compile Include="Revesestring_advance_programs.cs" />
     <Compile Include="Revese_string.cs" />
     <Compile Include="Revese_word.cs" />

@@ -10,7 +10,7 @@ namespace Strings
     {
 
 
-        // program convert number  into string
+        // program convert string to number
 
         static void Main(string[] args)
         {
